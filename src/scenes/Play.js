@@ -54,17 +54,7 @@ this.anims.create({
     }, null, this);
 
     this.gameOver = false;
-
-
-    scoreConfig.fixedWidth = 0;
-    this.clock = this.time.delayedCall(60000, () => {
-    this.add.text(game.config.width/2, game.config.height/2, 'GAME OVER', scoreConfig).setOrigin(0.5);
-    this.add.text(game.config.width/2, game.config.height/2 + 64, 'Press (R) to Restart', scoreConfig).setOrigin(0.5);
-    this.gameOver = true;
-}, null, this);
-
-
-      }
+    }
       preload() {
         
         this.load.image('rocket', './assets/rocket.png');
